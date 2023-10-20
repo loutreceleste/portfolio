@@ -5,9 +5,9 @@ import type { iconPaths } from './IconPaths';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Acceuil', href: 'portfolio/' },
+	{ label: 'Acceuil', href: '/portfolio/' },
 	{ label: 'Projets', href: '/portfolio/work/' },
-	{ label: 'À propos', href: 'portfolio/about/' },
+	{ label: 'À propos', href: '/portfolio/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -19,7 +19,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <nav>
 	<div class="menu-header">
-		<a href="portfolio/" class="site-title">
+		<a href="/portfolio/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
 			 Edward Peytavin
 		</a>
@@ -82,7 +82,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 								{
 									active:
 										Astro.url.pathname === href ||
-										(href !== 'portfolio/' && Astro.url.pathname.startsWith(href)),
+										(href !== '/portfolio/' && Astro.url.pathname.startsWith(href)),
 								},
 							]}
 							href={href}
