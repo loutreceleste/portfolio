@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="À propos | Edward Peytavin" description="À propos de Edward Peytavin">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="À propos"
+				tagline="Merci d'être passé. Lisez ci-dessous pour en apprendre davantage sur moi et mon parcours."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Mon espace de travail"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Mon parcours</h2>
+				<div class="content">
+					<p>
+						Je suis un développeur junior en Python, ayant etudié chez OpenClassrooms de mai 2023 à mai 2024. Mon expérience antérieure se situe dans le domaine de la gestion logistique et du transport, spécialisé en transit aérien et maritime. J'ai obtenu une licence professionnelle RPTL ainsi qu'un BTS en transport et logistique. Mon parcours académique comprend également un diplôme de commerce avec mention Assez Bien, et je suis titulaire d'un BEP en ouvrages chaudronniers et structures métalliques de l'école La Mache, obtenu en juin 2008.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplômes</h2>
+				<div class="content">
+					<p>- Licence professionnelle Responsable Production Transport et Logistique (Équivalent Bac+3)</p>
+					<p>- BTS Transport et logistique, option Transit Aérien et Maritime (Bac+2)</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Competences</h2>
+				<div class="content">
+					<p>Intégrité professionnelle, travail d'équipe, communication efficace, résolution de problèmes, adaptabilité.</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
