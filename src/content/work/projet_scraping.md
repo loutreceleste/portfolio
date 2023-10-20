@@ -1,7 +1,7 @@
 ---
 title: Projet Scraping
 publishDate: 2019-10-02 00:00:00
-img: portfolio/assets/projet_scraping.png
+img: /portfolio/assets/projet_scraping.png
 img_alt: Projet Scraping
 description: |
   Projet n°2 OpenClassrooms: 'Utilisez les bases de Python pour l'analyse de marché'.

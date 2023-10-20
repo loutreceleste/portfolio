@@ -1,7 +1,7 @@
 ---
 title: Projet Algorithmique
 publishDate: 2020-03-04 00:00:00
-img: portfolio/assets/projet_algorithme.png
+img: /portfolio/assets/projet_algorithme.png
 img_alt: Projet JavaScript
 description: |
   Projet n°7 OpenClassrooms: 'Résolvez des problèmes en utilisant des algorithmes en Python'.
