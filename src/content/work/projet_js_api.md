@@ -1,7 +1,7 @@
 ---
 title: Projet JavaScript
 publishDate: 2020-03-04 00:00:00
-img: /assets/projet_js_api.png
+img: portfolio/assets/projet_js_api.png
 img_alt: Projet JavaScript
 description: |
   Projet n°6 OpenClassrooms: 'Développez une interface utilisateur pour une application web Python'.

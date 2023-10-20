@@ -1,7 +1,7 @@
 ---
 title: Projet HTML CSS
 publishDate: 2019-12-01 00:00:00
-img: /assets/projet_cv.png
+img: portfolio/assets/projet_cv.png
 img_alt: Projet HTML CSS
 description: |
   Projet OpenClassrooms: 'Créez votre site web avec HTML5 et CSS3'.
