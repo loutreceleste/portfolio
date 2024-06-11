@@ -1,8 +1,8 @@
 ---
-title: Projet OC Lettings
+title: Projet Pipelin CI/CD
 publishDate: 2019-10-02 00:00:00
 img: /portfolio/assets/projet_ci_cd.png
-img_alt: Projet OC Lettings
+img_alt: Projet Pipelin CI/CD
 description: |
   Projet n°13 OpenClassrooms: 'Mettez à l'échelle une application Django en utilisant une architecture modulaire'.
 tags:
